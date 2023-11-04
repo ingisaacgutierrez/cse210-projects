@@ -27,13 +27,13 @@ class Activity
     }
     public void beginMessage()
     {
-       Console.WriteLine($"Welcome to the {_name}"+$"\n {_description}");
-       Console.WriteLine("How long, in seconds, would you like for your session?");
+       Console.WriteLine($"\nWelcome to the {_name}"+$"\n {_description}");
+       Console.WriteLine("\nHow long, in seconds, would you like for your session?");
 
     }
     public void endMessage()
     {
-        Console.WriteLine($"You have completed another {_duration} seconds of the {_name}");
+        Console.WriteLine($"\nYou have completed another {_duration} seconds of the {_name}");
     }
     public void showingSpinner()
     {
