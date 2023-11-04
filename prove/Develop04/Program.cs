@@ -31,6 +31,7 @@ class Program
                     baTime.showingSpinner();
                     baTime.endMessage();
                     baTime.showingSpinner();
+                    Console.Clear();
                         break;
                     case "2":
                     ReflectionActivity ra = new ReflectionActivity("Reflection Activity", "\nThis activity will help you reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life.",0);
@@ -46,10 +47,23 @@ class Program
                     raTime.showingSpinner();
                     raTime.endMessage();
                     raTime.showingSpinner();
+                    Console.Clear();
                         break;
                     case "3":
-                    
-                    Console.WriteLine("option3");
+                    ListingActivity la = new ListingActivity("Listing Activity", "\nThis activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.",0);
+                    la.beginMessage();
+                    duration = Convert.ToInt32(Console.ReadLine());
+                    ListingActivity laTime = new ListingActivity("Listing Activity", "",duration);
+                    Console.Clear();
+                    Console.WriteLine("Get ready...");
+                    laTime.showingSpinner();
+                    laTime.DisplayQuestions();
+                    laTime.GetUserAnswer();
+                    Console.WriteLine("\nWell done...");
+                    laTime.showingSpinner();
+                    laTime.endMessage();
+                    laTime.showingSpinner();
+                    Console.Clear();
                         break;
                     case "4":
                     Environment.Exit(0);
