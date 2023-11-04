@@ -1,6 +1,4 @@
 using System;
-using System.ComponentModel;
-
 class ListingActivity : Activity
 {
     private List<string> _questions = new List<string>
@@ -43,15 +41,6 @@ class ListingActivity : Activity
             _answers.Add(answer);
             Console.ReadKey();
         }
-
         Console.WriteLine($"\nYou listed {_answers.Count} items.");
     }
-    
-
-
-
-
-
-
-
 }

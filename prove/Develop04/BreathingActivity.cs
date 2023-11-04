@@ -1,6 +1,4 @@
 using System;
-
-
 class BreathingActivity : Activity
 {
     private string _showBreathIn = "Breathe in...";
@@ -30,9 +28,6 @@ class BreathingActivity : Activity
             pauseCountdownTimer(GetDuration()/5);
             isBreathIn = true;
           }
-        }
-        
-    }
-    
-
+        }  
+    }   
 }

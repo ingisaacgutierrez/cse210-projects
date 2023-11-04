@@ -1,5 +1,4 @@
 using System;
-
 class ReflectionActivity : Activity
 {
     private List<string> _prompts = new List<string>
@@ -47,8 +46,7 @@ class ReflectionActivity : Activity
         while(DateTime.Now < endTime)
         {
             Console.WriteLine($"\n{GetRandomQuestion()}");
-            showingSpinner();
-            
+            showingSpinner();  
         }
     }
     public string GetRandomPrompt()
@@ -61,13 +59,4 @@ class ReflectionActivity : Activity
         int rndIn = rnd.Next(_questions.Count);
         return _questions[rndIn];
     }
-
-
-
-
-
-
-
-
-
 }
