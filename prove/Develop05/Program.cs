@@ -3,10 +3,13 @@ using System;
 class Program
 {
     static void Main(string[] args)
-    {
+    { 
+
         string menuOption = "0";
+        CreatedGoals cg = new CreatedGoals();
             do
             {
+                Console.WriteLine("You have 0 points");
                 Console.WriteLine("\n" +"Menu Options:");
                 Console.WriteLine("  1. Create New Goal" +
                     "\n  2. List Goals" +
@@ -21,19 +24,21 @@ class Program
                 switch (menuOption)
                 {
                     case "1":
-                    Console.WriteLine("Create New Goal");
+                    cg.GetMenu();
                         break;
                     case "2":
-                    Console.WriteLine("List Goals");
+                    cg.ShowGoals();
                         break;
                     case "3":
-                    Console.WriteLine("Save Goals");
+                    cg.SaveGoals();
                     break;
                     case "4":
-                   Console.WriteLine("Load Goals");
+                    cg.LoadFile();
                         break;
                     case "5":
-                    Console.WriteLine("Record Event");
+                    Console.WriteLine("Which goal did you accomplish? ");
+                    cg.ShowGoals();
+                    int index = Convert.ToInt32(Console.ReadLine());
                     break;
                     case "6":
                     Environment.Exit(0);
